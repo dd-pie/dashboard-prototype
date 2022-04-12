@@ -1,1 +1,1 @@
-# Dashboard for Parnters in Education @ FDND, CMD & DD, HvA
+# Dashboard for Partners in Education @ FDND, CMD & DD, HvA
