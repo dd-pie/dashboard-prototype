@@ -5,27 +5,56 @@
     --professorship: rgb(243, 45, 154);
 }
 body {
-    font-family: 'open sans';
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans';
+    font-weight: 400;
     margin:0;
+    color:#333;
+    padding-top:3rem
 }
 header {
-    background: linear-gradient(-230deg, var(--fdnd) 20%, var(--cmd) 35%, var(--dd) 61%, var(--professorship) 96%);
     padding:1rem;
+    position: relative;
+    background-color: #333;
+    color:#fff;
+    position:fixed;
+    width:100%;
+    z-index:100;
+    top:0;
+}
+header:after {
+    content:'';
+    width:100%;
+    height:1rem;
+    position: absolute;
+    bottom:0;
+    left:0;
+    background: linear-gradient(-230deg, var(--fdnd) 20%, var(--cmd) 35%, var(--dd) 81%, var(--professorship) 96%);
 }
 h1 {
   margin:0;  
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 h1 em {
     display:block;
     font-style: normal;
-    font-size: .65em;
+}
+h1 em.fdnd {
+    color:var(--fdnd)
+}
+h1 em.cmd {
+    color:var(--cmd)
+}
+h1 em.dd {
+    color:var(--dd)
 }
 
 main {
     padding: 1rem
 }
 h2 {
-    text-transform: uppercase;
+    
 }
 h3 time {
     font-weight: normal;
@@ -79,6 +108,20 @@ ul li p:first-of-type {
     border: 1px solid rgb(190,190,190);
 }
 
+ul a {
+    color:inherit;
+    text-decoration:none;
+    margin-bottom: 1rem;
+}
+
+ul img {
+    height:12rem;
+    object-fit: cover;
+    border-radius:.25rem;
+    border: 1px solid rgb(190,190,190);
+    background-color: rgb(190,190,190);
+}
+
 ul ul {
     display:flex;
     flex-wrap:wrap;
@@ -105,11 +148,7 @@ ul ul:last-of-type li {
     margin-right: 0;
 }
 
-ul a {
-    color:inherit;
-    text-decoration:none;
-    margin-bottom: .5rem;
-}
+
 
 section > ul > li > a:first-of-type {
     font-weight: bold;
