@@ -71,8 +71,8 @@ ul li p:first-of-type {
     font-size: .8em;
     margin: 0 0 0.5rem;
     position: absolute;
-    right: -0.25rem;
-    top: -0.25rem;
+    right: 0.5rem;
+    top: 0.5rem;
     background-color: rgb(255, 255, 255);
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
