@@ -96,7 +96,6 @@ ul ul:last-of-type {
 ul ul li {
     border-radius:.25rem;
     padding:.25rem;
-    background:rgba(0,0,0,.2);
     margin-right:.25rem;
     margin-top:.25rem;
     display:flex;
