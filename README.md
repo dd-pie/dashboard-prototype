@@ -1,1 +1,2 @@
-# Dashboard for PiE projects @ FDND, CMD & DD, HvA
+# Dashboard for PiE projects  
+@ FDND, CMDA & DD
