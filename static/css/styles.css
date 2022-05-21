@@ -9,7 +9,7 @@ body {
     margin:0;
 }
 header {
-    background: linear-gradient(-230deg, var(--fdnd) 20%, var(--cmd) 40%, var(--dd) 91%);
+    background: linear-gradient(-230deg, var(--fdnd) 20%, var(--cmd) 35%, var(--dd) 61%, var(--professorship) 96%);
     padding:1rem;
 }
 h1 {
@@ -87,7 +87,9 @@ ul ul {
     font-size: .9rem;
     margin-top:auto;
 }
-
+ul ul:first-of-type {
+    padding-top:.5rem
+}
 ul ul:last-of-type {
     margin-top: .05rem;
     flex-direction:column;
