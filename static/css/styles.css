@@ -40,7 +40,7 @@ h1 {
   text-transform: uppercase;
 }
 h1 em {
-    display:block;
+    
     font-style: normal;
 }
 h1 em.fdnd {
@@ -159,11 +159,4 @@ section > ul > li > a:first-of-type {
 
 ul ul a {
     margin-bottom: 0;
-}
-
-
-@media (min-width:45em){
-    h1 em {
-        display:inline
-    }
 }
