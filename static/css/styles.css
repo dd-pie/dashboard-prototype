@@ -10,7 +10,7 @@ body {
     font-weight: 400;
     margin:0;
     color:#333;
-    padding-top:3rem
+    padding-top:5rem
 }
 header {
     padding:1rem;
@@ -40,7 +40,6 @@ h1 {
   text-transform: uppercase;
 }
 h1 em {
-    
     font-style: normal;
 }
 h1 em.fdnd {
@@ -52,7 +51,9 @@ h1 em.cmd {
 h1 em.dd {
     color:var(--dd)
 }
-
+h1 strong {
+    display: block;
+}
 main {
     padding: 1rem
 }
@@ -159,4 +160,13 @@ section > ul > li > a:first-of-type {
 
 ul ul a {
     margin-bottom: 0;
+}
+
+@media (min-width:40em) {
+    body {
+        padding-top: 3rem;
+    }
+    h1 strong {
+        display: inline
+    }
 }
