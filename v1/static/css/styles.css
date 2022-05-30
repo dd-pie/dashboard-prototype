@@ -10,7 +10,8 @@ body {
     font-weight: 400;
     margin:0;
     color:#333;
-    padding-top:5rem
+    padding-top:5rem;
+    background-color: #eee;
 }
 header {
     padding:1rem;
@@ -71,7 +72,7 @@ ul {
 ul li {
     display:flex;
     flex-direction:column;
-    background:#eee;
+    background:#fff;
     padding:.5rem;
     border-radius:.5rem;
     position:relative
@@ -98,15 +99,16 @@ section > ul {
 section > ul > li {
     padding-bottom:.5rem;
     position: relative;
+    margin-bottom: .5rem;
 }
 
 ul li p:first-of-type {
     font-size: .8em;
-    margin: 0 0 0.5rem;
+    margin: 0;
     position: absolute;
     right: 0.5rem;
     top: 0.5rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #eee;
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     border: 1px solid rgb(190,190,190);
@@ -124,6 +126,8 @@ ul img {
     border-radius:.25rem;
     border: 1px solid rgb(190,190,190);
     background-color: rgb(190,190,190);
+
+    display:none;
 }
 
 ul ul {
@@ -151,8 +155,6 @@ ul ul li {
 ul ul:last-of-type li {
     margin-right: 0;
 }
-
-
 
 section > ul > li > a:first-of-type {
     font-weight: bold;
