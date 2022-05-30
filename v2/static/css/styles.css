@@ -47,7 +47,8 @@ h1 strong {
     display: block;
 }
 main {
-    padding: 1rem
+    padding: 1rem;
+    max-width:33.5em;
 }
 h2 {
     
