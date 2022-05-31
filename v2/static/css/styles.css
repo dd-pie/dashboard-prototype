@@ -11,12 +11,13 @@ body {
     color:#333;
     padding-top:5rem;
     background-color: #eee;
+    
 }
 header {
     padding:1rem;
     position: relative;
     background-color: #333;
-    color:#fff;
+    color:#666;
     position:fixed;
     width:100%;
     z-index:100;
@@ -30,6 +31,9 @@ h1 {
   margin:0 .5rem;  
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+h1 strong {
+    color:#fff
 }
 h1 em {
     font-style: normal;
@@ -48,17 +52,15 @@ h1 strong {
 }
 main {
     padding: 1rem;
-    max-width:36em;
+    /max-width:36em;
 }
-h2 {
-    
+h2 time {
+   font-weight: normal; 
+   font-size: .8em;
 }
 h3 {
     font-weight: normal;
     display:none;
-}
-h3 time {
-    font-size: .9rem;
 }
 ul {
     list-style:none;
@@ -72,20 +74,6 @@ ul li {
     padding:.5rem;
     position:relative
 }
-li.fdnd {
-    background-color: var(--fdnd);
-}
-li.cmd {
-    background-color: var(--cmd);
-}
-li.dd {
-    background-color: var(--dd);
-    color:#fff
-}
-li.professorship {
-    background-color: var(--professorship);
-    color:#fff
-}
 section > ul {
     display: flex;
     flex-direction:column
@@ -93,28 +81,38 @@ section > ul {
 }
 section > ul > li {
     padding-bottom:.5rem;
-    padding-right: 2rem;
     position: relative;
     margin-bottom: .25rem;
+    transition:.15s
 }
 
-ul li p:nth-of-type(1) {
-    font-size: .8em;
-    margin: 0 0 0 auto;
-    padding: 0.25rem 0.5rem;
-
+section > ul > li:hover {
+    background-color: #f9f9f9;
 }
 
 ul > li > a {
     color:inherit;
     text-decoration:none;
     margin-right: .5rem;
-    font-size: .8em;
 }
 ul > li > a strong {
-    font-size: 1.25em;
     display:block;
 }
+ul > li > a em {
+    font-size: .65em;
+    font-style: normal;
+    background-color: #f0f0f0;
+    padding:.1rem .25rem;
+    text-transform: uppercase;
+}
+ul > li > a em.client {
+    text-transform: capitalize;
+}
+ul > li > a em.fdnd { background-color:var(--fdnd);}
+ul > li > a em.cmd { background-color:var(--cmd);}
+ul > li > a em.dd { background-color:var(--dd); color:#fff}
+
+
 ul a:before {
     content:'';
     position: absolute;
@@ -133,57 +131,27 @@ ul img {
     width:100%;
     margin:1rem 0
 }
-
+ul svg {
+    transform: scale(0.8)
+}
 ul ul {
     font-size: .9rem;
-    margin-top:auto;
-}
-
-ul ul li {
-    padding:0;
-    margin-right:0;
-    margin-top:0;
     display:flex;
+    position:absolute;
+    right:.25rem;
+    top:.75rem;
 }
-
-ul ul a {
-    margin-bottom: 0;
+ul p {
+    margin:0;
+    font-size: .8em;
+    padding-right:2em
 }
-
-@media (min-width:40em) {
-    body {
-        padding-top: 3rem;
-    }
-    h1 strong {
-        display: inline
-    }
-}
-
-h3 time,
-ul li p:nth-of-type(2),
-ul img,
-ul ul,
-ul ul:last-of-type li a {
+ul li p,
+ul img {
     display:none;
 }
 
-ul ul:last-of-type {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 1.5rem;
-    height: calc(100%);
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-ul ul:last-of-type li {
-    flex:1;
-    padding:0;
-}
-
-ul li.active p:nth-of-type(2),
+ul li.active p,
 ul li.active  img,
 ul li.active ul,
 li.active ul ul {
@@ -194,18 +162,50 @@ li.active {
     flex-direction: column;
     align-items: flex-start;
 }
-ul li.active p:nth-of-type(1) {
-    position:absolute;
-    top:.5rem;
-    right:2rem;
+ul ul li {
+    background-color: transparent;
+    padding:0 .25rem
+}
+/* form */
+fieldset {
+    border:none;
+    padding: 0;
+}
+legend {
+    font-weight: bold;
+    padding: 0 .25rem
+}
+label {
+    display:block;
+    margin-bottom: .25rem;
+    padding: 0 .25rem;
+    font-size: .8em;
+}
+select {
+    width:100%;
+    font-size: .8em;
+    font-family: inherit;
+    padding:.5rem .25rem;
 }
 
-ul li.active ul:last-of-type li {
-    padding:.25rem
-}
-ul li.active ul:last-of-type li:first-of-type {
-    padding-left: 0.5rem;
-}
-ul li.active ul:last-of-type li strong {
-    margin-right: .25rem;
+
+/* breakpoint 1 */
+
+@media (min-width:40em) {
+    body {
+        padding-top: 3rem;
+        
+    }
+    main {
+        display:grid;
+        gap: 2em;
+        grid-template-columns: 1fr 1fr;
+    }
+    h1 strong {
+        display: inline
+    }
+
+    fieldset {
+        margin-top:5rem
+    }
 }
