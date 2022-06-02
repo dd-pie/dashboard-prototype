@@ -72,7 +72,6 @@ ul li {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #fff;
     padding: .5rem;
     position: relative
 }
@@ -128,37 +127,15 @@ section > ul > li {
     padding-bottom: .5rem;
     position: relative;
     margin-bottom: .25rem;
-    transition: .15s
+    transition: .15s;
+    background: #fff;
 }
 
 section > ul > li:hover {
     background-color: #f9f9f9;
 }
 
-section > a {
-    align-self:flex-end;
-    position: relative;
-    padding:.25rem;
-    padding-right:25px;
-    margin-right:.25rem;
-    transition:transform .15s;
-    
-}
 
-section > a:hover {
-    transform: scale(1.05);
-    background-color: #333;
-    color:#fff
-}
-
-section > a svg {
-    position: absolute;
-    right:.25rem;
-    top:calc(50% - 8px)
-}
-section > a:hover svg {
-    stroke:#fff
-}
 
 ul > li > a {
     color: inherit;
@@ -291,11 +268,20 @@ select {
 }
 
 /* filter */
+button svg line.off {
+    opacity:0;
+    transition:.25s
+}
 fieldset {
     transform-origin:center 0;
     transform:translateY(-100%);
     transition:.25s;
     transition-delay:.25s;
+    min-width:100%;
+    overflow-x:scroll;
+}
+section.filter button svg line.off {
+    opacity:1
 }
 section.filter fieldset {
     transform: translateY(0);
@@ -306,8 +292,33 @@ section > ul {
 }
 
 section.filter > ul {
-    transform:translateY(5rem);
+    transform:translateY(4rem);
     transition-delay:.1s;
+}
+
+/* footer */
+footer a {
+    align-self:flex-end;
+    position: relative;
+    padding:.25rem;
+    padding-right:25px;
+    margin-right:.25rem;
+    transition: .15s;
+    background-color: #fff;
+}
+
+footer a:hover {
+    background-color: #333;
+    color:#fff
+}
+
+footer a svg {
+    position: absolute;
+    right:.25rem;
+    top:calc(50% - 8px)
+}
+footer a:hover svg {
+    stroke:#fff
 }
 
 /* breakpoint 1 */
@@ -316,10 +327,19 @@ section.filter > ul {
         padding-top: 3rem;
     }
 
-    main {
+    main,
+    footer ul {
         display: grid;
         gap: 2em;
         grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        grid-column: 1 / -1
+    }
+
+    footer ul {
+        justify-items: end;
     }
 
     h1 strong {
