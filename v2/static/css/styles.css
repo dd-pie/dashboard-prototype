@@ -15,7 +15,7 @@ body {
     
 }
 
-header {
+body > header {
     padding: 1rem;
     position: relative;
     background-color: #333;
@@ -52,14 +52,10 @@ h1 strong {
     display: block;
 }
 
-main {
-    padding: 1rem;
-    /max-width: 60em;
-}
-
 h2 time {
    font-weight: normal; 
    font-size: .8em;
+   white-space: nowrap;
 }
 
 h3 {
@@ -80,9 +76,47 @@ ul li {
     padding: .5rem;
     position: relative
 }
+
+a,
+a:active,
+a:visited {
+    color:#333;
+    font-size: .9rem;
+}
+
+main {
+    padding: 1rem;
+}
+
 #design-challenges ul li {
     flex-direction: column;
     align-items:flex-start
+}
+
+section {
+    display:flex;
+    flex-direction: column;
+}
+
+section > header {
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-right: .5rem;
+    position: relative
+}
+
+section > header button {
+    display:flex;
+    border:none;
+    align-items: flex-end;
+    white-space: nowrap;
+    margin-top: 1.75rem;
+}
+
+section > header button svg {
+    margin-left: .25rem;
+    transform:translateY(3px)
 }
 
 section > ul {
@@ -99,6 +133,31 @@ section > ul > li {
 
 section > ul > li:hover {
     background-color: #f9f9f9;
+}
+
+section > a {
+    align-self:flex-end;
+    position: relative;
+    padding:.25rem;
+    padding-right:25px;
+    margin-right:.25rem;
+    transition:transform .15s;
+    
+}
+
+section > a:hover {
+    transform: scale(1.05);
+    background-color: #333;
+    color:#fff
+}
+
+section > a svg {
+    position: absolute;
+    right:.25rem;
+    top:calc(50% - 8px)
+}
+section > a:hover svg {
+    stroke:#fff
 }
 
 ul > li > a {
@@ -192,20 +251,34 @@ ul ul li {
 }
 
 /* form */
+section form {
+    overflow:hidden;
+    position:absolute;
+    top:100%;
+    width:100%
+}
+
 fieldset {
     border:none;
     padding: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+fieldset p {
+    margin-top: 0;
 }
 
 legend {
     font-weight: bold;
-    padding: 0 .25rem
+    padding: 0 .25rem;
+    display:none
 }
 
 label {
     display: block;
     margin-bottom: .25rem;
-    padding: 0 .25rem;
+    padding: 0 .5rem;
     font-size: .8em;
 }
 
@@ -217,6 +290,25 @@ select {
     border: none;
 }
 
+/* filter */
+fieldset {
+    transform-origin:center 0;
+    transform:translateY(-100%);
+    transition:.25s;
+    transition-delay:.25s;
+}
+section.filter fieldset {
+    transform: translateY(0);
+    transition-delay:.1s;
+}
+section > ul {
+    transition:.25s .25s;
+}
+
+section.filter > ul {
+    transform:translateY(5rem);
+    transition-delay:.1s;
+}
 
 /* breakpoint 1 */
 @media (min-width:40em) {
