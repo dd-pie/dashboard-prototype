@@ -130,10 +130,12 @@ section > ul > li {
     margin-bottom: .25rem;
     transition: .15s;
     background: #fff;
+    transition:.15s
 }
 
 section > ul > li:hover {
     background-color: #f9f9f9;
+    transform:scale(1.005)
 }
 
 
