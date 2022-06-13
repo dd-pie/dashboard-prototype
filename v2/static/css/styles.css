@@ -159,7 +159,9 @@ section > ul > li {
     margin-bottom: .25rem;
     transition: .15s;
     background: #fff;
-    transition:.15s
+    transition:.15s;
+
+    min-height: 2.59rem; /* temporary style hack */
 }
 
 section > ul > li:hover {
