@@ -1,3 +1,5 @@
+
+
 :root {
     --cmd: #fff021;
     --fdnd: #66e5bf;
@@ -10,21 +12,10 @@ body {
     font-weight: 400;
     margin: 0;
     color: #333;
-    padding-top: 5rem;
+    padding-top: 8rem;
     padding-bottom: 2rem;
     background-color: #eee;
     
-}
-
-body > header {
-    padding: 1rem;
-    position: relative;
-    background-color: #333;
-    color: #666;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 0;
 }
 
 h1, h2, h3 {
@@ -32,9 +23,9 @@ h1, h2, h3 {
 }
 
 h1 {
-  margin: 0 .5rem;  
-  font-size: 1.5rem;
-  text-transform: uppercase;
+margin: 0 .5rem;  
+font-size: 1.5rem;
+text-transform: uppercase;
 }
 
 h1 strong {
@@ -54,9 +45,9 @@ h1 strong {
 }
 
 h2 time {
-   font-weight: normal; 
-   font-size: .8em;
-   white-space: nowrap;
+font-weight: normal; 
+font-size: .8em;
+white-space: nowrap;
 }
 
 h3 {
@@ -67,6 +58,7 @@ h3 {
 ul {
     list-style: none;
     padding: 0;
+    display:flex
 }
 
 ul li {
@@ -84,11 +76,47 @@ a:visited {
     font-size: .9rem;
 }
 
+body > header {
+    padding: 1rem 1rem 0;
+    position: relative;
+    background-color: #333;
+    color: #666;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+nav {
+    background-color: #555;
+    margin:1rem -1rem 0;
+    padding-left:1rem
+}
+
+nav ul {
+    margin:0
+}
+nav ul li a,
+nav ul li a:active, 
+nav ul li a:visited {
+    color:#fff
+}
+nav ul li:hover {
+    background-color: #fff;
+}
+nav ul li:hover a {
+    color: #333;
+}
+
 main {
     padding: 1rem;
 }
 
-#design-challenges ul li {
+main > div {
+    position: relative;
+}
+
+section#design-challenges ul li {
     flex-direction: column;
     align-items:flex-start
 }
@@ -96,6 +124,7 @@ main {
 section {
     display:flex;
     flex-direction: column;
+    position: relative;
 }
 
 section > header {
@@ -103,7 +132,7 @@ section > header {
     align-items:flex-start;
     justify-content: space-between;
     margin-right: .5rem;
-    position: relative
+    position: relative;
 }
 
 section > header button {
@@ -138,10 +167,29 @@ section > ul > li:hover {
     transform:scale(1.005)
 }
 
+section > a {
+    position: relative;
+    align-self:flex-end;
+    padding:.5rem 1.5rem .5rem .5rem;
+    background-color: #fff;
+    text-decoration: none;
+}
 
+section > a:hover {
+    background-color: #666;
+    color:#fff
+}
+
+section > a svg {
+    position: absolute;
+    right:.25rem;
+    top:calc(50% - 8px)
+}
+section > a:hover svg {
+    stroke:#fff
+}
 
 ul > li > a {
-    color: inherit;
     text-decoration: none;
     margin-right: .5rem;
 }
@@ -231,17 +279,18 @@ ul ul li {
 }
 
 /* form */
-section form {
+form {
     overflow:hidden;
-    position:absolute;
-    top:100%;
-    width:100%
+    position:fixed;
+    width:40vw
 }
 
 fieldset {
     border:none;
+    margin-top: 7rem;
     padding: 0;
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
 }
 
@@ -251,8 +300,8 @@ fieldset p {
 
 legend {
     font-weight: bold;
-    padding: 0 .25rem;
-    display:none
+    padding: 0 .5rem;
+    /display: none;
 }
 
 label {
@@ -275,16 +324,15 @@ button svg line.off {
     opacity:0;
     transition:.25s
 }
+section.filter button svg line.off {
+    opacity:1
+}
 fieldset {
     transform-origin:center 0;
-    transform:translateY(-100%);
     transition:.25s;
     transition-delay:.25s;
     min-width:100%;
     overflow-x:scroll;
-}
-section.filter button svg line.off {
-    opacity:1
 }
 section.filter fieldset {
     transform: translateY(0);
@@ -299,45 +347,10 @@ section.filter > ul {
     transition-delay:.1s;
 }
 
-/* footer */
-footer {
-    position:fixed;
-    width:100%;
-    bottom:0;
-    left:0;
-    background-color: #332;
-}
-footer ul {
-    margin:0;
-}
-footer a {
-    align-self:flex-end;
-    position: relative;
-    padding:.25rem;
-    padding-right:25px;
-    margin-right:.25rem;
-    transition: .15s;
-    background-color: #fff;
-}
-
-footer a:hover {
-    background-color: #666;
-    color:#fff
-}
-
-footer a svg {
-    position: absolute;
-    right:.25rem;
-    top:calc(50% - 8px)
-}
-footer a:hover svg {
-    stroke:#fff
-}
-
 /* breakpoint 1 */
 @media (min-width:40em) {
     body {
-        padding-top: 3rem;
+        padding-top: 6rem;
     }
 
     main,
