@@ -157,9 +157,7 @@ section > ul > li {
     padding-bottom: .5rem;
     position: relative;
     margin-bottom: .25rem;
-    transition: .15s;
     background: #fff;
-    transition:.15s;
 
     min-height: 2.59rem; /* temporary style hack */
 }
