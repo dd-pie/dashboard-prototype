@@ -3,7 +3,8 @@
 :root {
     --cmd: #fff021;
     --fdnd: #66e5bf;
-    --dd: rgb(8, 93, 196);
+    --dd: #085dc4;
+    --heigth: 0
 }
 
 body {
@@ -52,7 +53,7 @@ white-space: nowrap;
 
 h3 {
     font-weight: normal;
-    display: none;
+    margin-bottom: .5rem;
 }
 
 ul {
@@ -147,10 +148,16 @@ section > header button svg {
     margin-left: .25rem;
     transform:translateY(3px)
 }
+section > div {
+    width:50%;
+    align-self: center;
+    margin-bottom: 2rem;
+}
 
 section > ul {
     display: flex;
     flex-direction: column;
+    margin-top:2rem
 }
 
 section > ul > li {
@@ -158,8 +165,7 @@ section > ul > li {
     position: relative;
     margin-bottom: .25rem;
     background: #fff;
-
-    min-height: 2.59rem; /* temporary style hack */
+    flex:1;
 }
 
 section > ul > li:hover {
@@ -250,6 +256,9 @@ ul p {
     font-size: .8em;
     padding-right:2em
 }
+#design-challenges ul {
+    min-height:var(--height)
+}
 #design-challenges ul p {
     margin-top:.5rem
 }
@@ -281,7 +290,7 @@ ul ul li {
 /* form */
 form {
     overflow:hidden;
-    position:fixed;
+    /position:fixed;
     width:40vw
 }
 
@@ -317,34 +326,6 @@ select {
     font-family: inherit;
     padding: .5rem .25rem;
     border: none;
-}
-
-/* filter */
-button svg line.off {
-    opacity:0;
-    transition:.25s
-}
-section.filter button svg line.off {
-    opacity:1
-}
-fieldset {
-    transform-origin:center 0;
-    transition:.25s;
-    transition-delay:.25s;
-    min-width:100%;
-    overflow-x:scroll;
-}
-section.filter fieldset {
-    transform: translateY(0);
-    transition-delay:.1s;
-}
-section > ul {
-    transition:.25s .25s;
-}
-
-section.filter > ul {
-    transform:translateY(4rem);
-    transition-delay:.1s;
 }
 
 /* breakpoint 1 */

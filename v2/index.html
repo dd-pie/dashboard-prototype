@@ -7,6 +7,8 @@
     <title>Dashboard PiE @ FDND, CMD & DD</title>
 
     <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="static/js/charts.js"></script>
     <script defer src="static/js/scripts.js"></script>
 </head>
 <body>
@@ -26,10 +28,15 @@
     <main>
         <section id="current-projects">
             <header>
-                <h2>Lopende projecten <time>2021 / 2022</time></h2>
+                <h2>Projecten <time>2021 / 2022</time></h2>
 
-            </header>          
+            </header> 
+            
+            <div>
+                <canvas id="projectsChart"></canvas>
+            </div>
 
+            <h3>Nieuwste projecten</h3>
             <ul>
                 <li>
                     <a href=""><strong>Companion App</strong> <em class="client">MijnHvA Student</em> <em class="fdnd">fdnd</em></a>
@@ -270,7 +277,13 @@
             <header>
                 <h2>Design challenges <time>2022 / 2023</time></h2>
             </header>
+
+            <div>
+                <canvas id="challengesChart"></canvas>
+            </div>
             
+            <h3>Nieuwste design challenges</h3>
+
             <ul>
                 <li>
                     <a href=""><strong>Gezondheidspreventie app</strong> <em class="client">Opdrachtgever: Onderzoeksgroep Urban Vitality</em></a>
@@ -312,65 +325,7 @@
                 </svg>
             </a> 
         </section>
-        
-        <section id="documents">
-            <header>
-                <h2>Documenten</h2>
-            </header>          
-
-            <ul>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <desc>Download more icon variants from https://tabler-icons.io/i/file-download</desc>
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
-                            <path d="M12 17v-6"></path>
-                            <path d="M9.5 14.5l2.5 2.5l2.5 -2.5"></path>
-                        </svg>
-                        Intellectueel Eigendom
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <desc>Download more icon variants from https://tabler-icons.io/i/file-download</desc>
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
-                            <path d="M12 17v-6"></path>
-                            <path d="M9.5 14.5l2.5 2.5l2.5 -2.5"></path>
-                        </svg>
-                        Non-Disclosure Agreement
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <desc>Download more icon variants from https://tabler-icons.io/i/file-download</desc>
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
-                            <path d="M12 17v-6"></path>
-                            <path d="M9.5 14.5l2.5 2.5l2.5 -2.5"></path>
-                        </svg>
-                        Projectbeschrijving
-                    </a>
-                </li>
-            </ul>
-
-            <a href="documenten.html">
-                Bekijk alle documenten 
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#333333" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                </svg>
-            </a> 
-        </section>
     </main>
-    
+
 </body>
 </html>
