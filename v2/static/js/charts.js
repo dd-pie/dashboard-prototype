@@ -17,8 +17,8 @@ const projectsChart = new Chart(projectsCTX, {
     },
     options: {
         title: {
-            display: true,
-            text: 'Pie Chart'
+            display: false,
+            text: 'Projecten'
         },
         responsive: true,
         maintainAspectRatio: false,
@@ -29,21 +29,21 @@ const challengesCTX = document.querySelector("#challengesChart");
 const challengesChart = new Chart(challengesCTX, {
     type: 'pie',
     data: {
-        labels: ["FDND (12)", "CMD (29)", "MDD (15)"],
+        labels: ["VID (12)", "UX/UI (15)", "FED (11)"],
         datasets: [
         {
-            data: [12,29, 15],
+            data: [12, 15, 11],
             backgroundColor: [
-               "#66e5bf",
-                "#fff021",
-                "#085dc4"
+               "#666",
+                "#ccc",
+                "#aaa"
             ]
         }]
     },
     options: {
         title: {
             display: true,
-            text: 'Pie Chart'
+            text: 'Sustainability Goals'
         },
         responsive: true,
         maintainAspectRatio: false,
