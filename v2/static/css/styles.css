@@ -1,9 +1,7 @@
-
-
 :root {
     --cmd: #fff021;
     --fdnd: #66e5bf;
-    --dd: #085dc4;
+    --mdd: #085dc4;
     --heigth: 0
 }
 
@@ -38,16 +36,16 @@ h1 em {
 
 h1 em.fdnd { color: var(--fdnd) }
 h1 em.cmd {  color: var(--cmd) }
-h1 em.dd { color: var(--dd) }
+h1 em.mdd { color: var(--mdd) }
 
 h1 strong {
     display: block;
 }
 
 h2 time {
-font-weight: normal; 
-font-size: .8em;
-white-space: nowrap;
+    font-weight: normal; 
+    font-size: .8em;
+    white-space: nowrap;
 }
 
 h3 {
@@ -89,6 +87,10 @@ body > header {
     width: 100%;
     z-index: 100;
     top: 0;
+}
+
+header > form {
+    display:none;
 }
 
 nav {
@@ -221,7 +223,7 @@ ul > li > a em.client {
 
 ul > li > a em.fdnd { background-color:var(--fdnd); }
 ul > li > a em.cmd { background-color:var(--cmd); }
-ul > li > a em.dd { background-color:var(--dd); color:#fff }
+ul > li > a em.mdd { background-color:var(--mdd); color:#fff }
 
 ul a:before {
     content:'';
@@ -257,7 +259,8 @@ ul ul {
 ul p {
     margin:0;
     font-size: .8em;
-    padding-right:2em
+    padding-right:2em;
+    display:none
 }
 #design-challenges ul {
     min-height:var(--height)
@@ -266,7 +269,7 @@ ul p {
     margin-top:.5rem
 }
 
-#current-projects ul li p,
+.projects ul li p,
 ul img {
     display:none;
 }
@@ -288,6 +291,11 @@ ul ul li {
     flex-direction: column;
     background-color: transparent;
     padding:0 .25rem
+}
+
+.single-col p {
+    margin-left:.5rem;
+    max-width:40em;
 }
 
 /* form */
@@ -312,7 +320,7 @@ fieldset p {
 legend {
     font-weight: bold;
     padding: 0 .5rem;
-    display: none;
+    /display: none;
 }
 
 label {
@@ -341,6 +349,25 @@ select {
         display: grid;
         gap: 2em;
         grid-template-columns: 1fr 1fr;
+    }
+    
+    .multi-cols {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .multi-cols li {
+        margin-right: .5rem;
+    }
+
+    main.single-col {
+        display:flex;
+        flex-direction:column;
+    }
+
+    main > header {
+        grid-column: 1 / -1;
+        margin-bottom: -2rem;
     }
 
     footer {

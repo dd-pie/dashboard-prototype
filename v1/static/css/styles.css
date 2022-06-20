@@ -30,7 +30,6 @@ header:after {
     position: absolute;
     bottom:0;
     left:0;
-    background: linear-gradient(-230deg, var(--fdnd) 20%, var(--cmd) 35%, var(--dd) 81%, var(--professorship) 96%);
 }
 h1, h2, h3 {
     margin-left: .5rem;
@@ -112,6 +111,7 @@ ul li p:first-of-type {
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     border: 1px solid rgb(190,190,190);
+    display:none;
 }
 
 ul a {
@@ -126,8 +126,6 @@ ul img {
     border-radius:.25rem;
     border: 1px solid rgb(190,190,190);
     background-color: rgb(190,190,190);
-
-    display:none;
 }
 
 ul ul {

@@ -11,25 +11,174 @@
 </head>
 <body>
     <header>
-        <h1><em class="fdnd">FDND</em> / <em class="cmd">CMD</em> / <em class="dd">MDD</em> / <strong>Partners in Education</strong></h1>
+        <h1><strong>Partners in Education</strong> / <em class="fdnd">FDND</em> / <em class="cmd">CMD</em> / <em class="mdd">MDD</em> </h1>
 
         <nav>
             <ul>
                 <li><a href="./">Dashboard</a></li>
+                <li><a href="partners.html">Partners</a></li>
                 <li><a href="projecten.html">Projecten</a></li>
                 <li><a href="design-challenges.html">Design challenges</a></li>
                 <li><a href="documenten.html">Documenten</a></li>
+                <li><a href="over-pie.html">Over Pie</a></li>
             </ul>
         </nav>
+
+        <form action="#">
+            <fieldset>
+                <legend>Filter projecten</legend>
+
+                <p>
+                    <label for="programme">Opleiding</label>
+
+                    <select name="programme" id="programme">
+                        <option value="" disabled selected>kies opleiding</option>
+                        <option value="fdnd">FDND</option>
+                        <option value="cmd">CMD</option>
+                        <option value="mdd">MDD</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="year">Studiejaar</label>
+
+                    <select name="year" id="year">
+                        <option value="" disabled selected>kies studiejaar</option>
+                        <option value="year1">Propedeuse</option>
+                        <option value="year2">Jaar 2</option>
+                        <option value="year3">Jaar 3</option>
+                        <option value="year4">Jaar 4</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="term">Periode</label>
+
+                    <select name="term" id="term">
+                        <option value="" disabled selected>Kies een periode</option>
+                        <option value="block1">Blok 1</option>
+                        <option value="block2">Blok 2</option>
+                        <option value="block3">Blok 3</option>
+                        <option value="block4">Blok 4</option>
+                        <option value="block4">Semester 1</option>
+                        <option value="block4">Semester 2</option>
+                        
+                    </select>
+                </p>
+
+                <p>
+                    <label for="topics">Onderwerpen</label>
+
+                    <select name="topics" id="topics">
+                        <option value="" disabled selected>kies onderwerp</option>
+                        <option value="concept">Concept</option>
+                        <option value="content">Content</option>
+                        <option value="vid">VID</option>
+                        <option value="ui-ux">UI/UX</option>
+                        <option value="fed">Frontend</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="themes">Thema's</label>
+
+                    <select name="thems" id="themes">
+                        <option value="" disabled selected>kies thema</option>
+                        <option value="">Jeugdzorg</option>
+                        <option value="">Duurzaamheid</option>
+                        <option value="">Mediawijsheid</option>
+                        <option value="">Voeding</option>
+                        <option value="">Beweging</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="themes">Sustainable Development Goals</label>
+
+                    <select name="sdg" id="sdg">
+                        <option value="" disabled selected>kies SDG</option>
+                        <option value="">Armoede</option>
+                        <option value="">Honger</option>
+                        <option value="">Gezondheidszorg</option>
+                        <option value="">Gendergelijkheid</option>
+                        <option value="">Schoon water</option>
+                        <option value="">Duurzame energie</option>
+                        <option value="">Economische groei</option>
+                        <option value="">Infrastructuur</option>
+                        <option value="">Gelijkheid</option>
+                        <option value="">Veiligheid</option>
+                        <option value="">Duurzame consumptie</option>
+                        <option value="">Klimaat</option>
+                        <option value="">Oceanen & Zeeën</option>
+                        <option value="">Biodiversiteit</option>
+                        <option value="">Publieke diensten</option>
+                        <option value="">Mondiaal partnerschap</option>
+                    </select>
+                </p>
+            </fieldset>
+        </form>
     </header>
 
-    <main>
-        <section id="current-projects">
+    <main class="multi-cols">
+        <header>
+            <h2>Projecten <time>2021 / 2022</time></h2>
+        </header> 
+
+        <section id="fdnd-projecten">
             <header>
-                <h2>Projecten <time>2021 / 2022</time></h2>
+                <h3>FDND</h3>
             </header>          
 
             <ul>
+                <li>
+                    <a href=""><strong>Scrollbook</strong> <em class="client">Joop Akerboom</em> <em class="fdnd">fdnd</em></a>
+
+                    <img src="static/img/companion-app.png" alt="">
+                    
+                    <p>
+                        Ontwerp en ontwikkel een welkom pagina voor de Companion App van mijnHvA Student.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/file-code</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                                <path d="M10 13l-1 2l1 2"></path>
+                                <path d="M14 13l1 2l-1 2"></path>
+                            </svg>
+                            FED
+                        </li>
+                    </ul>
+                </li>
+
                 <li>
                     <a href=""><strong>Companion App</strong> <em class="client">MijnHvA Student</em> <em class="fdnd">fdnd</em></a>
 
@@ -156,7 +305,7 @@
                 </li>
                 
                 <li>
-                    <a href=""><strong>Coding the Curbs</strong> <em class="client">Fronteer</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
+                    <a href="coding-the-curbs.html"><strong>Coding the Curbs</strong> <em class="client">Fronteer</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
 
                     <img src="https://github.com/cmda-minor-web-cases/coding-the-curbs/raw/main/assets/coding-the-curbs.jpeg?raw=true" alt="">
                     
@@ -205,7 +354,168 @@
                 </li>
 
                 <li>
-                    <a href=""><strong>Disco</strong> <em class="client">Thierno Baldé</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
+                    <a href=""><strong>ScanMyTest</strong> <em class="client">StreekLab Haarlem </em> <em class="fdnd">fdnd</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>The Game of Tones</strong> <em class="client">Stella Nieuwenhuizen</em> <em class="fdnd">fdnd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>Reflect for Effect</strong> <em class="client">Lectoraat Jeugdzorg</em> <em class="fdnd">fdnd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>Redesign chipper.dev</strong> <em class="client">Chippr</em> <em class="fdnd">fdnd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="cmd-projecten">
+            <header>
+                <h3>CMD</h3>
+            </header> 
+            
+            <ul>
+                <li>
+                    <a href=""><strong>Disco</strong> <em class="client">Thierno Baldé</em> <em class="cmd">cmd</em></a>
 
                     <img src="https://camo.githubusercontent.com/7fe0164510e9fa8ab033c6723688506b3ab1d389de5e0bc16a1d33185cf01d6a/68747470733a2f2f7777772e6d61726b6574696e6739312e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032302f30372f576861742d69732d446953432d4d6f64656c2e6a7067" alt="">
                     
@@ -254,7 +564,7 @@
                 </li>
 
                 <li>
-                    <a href=""><strong>Chatbot van de toekomst</strong> <em class="client">OBA</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em> <em class="dd">mdd</em></a>
+                    <a href=""><strong>Chatbot van de toekomst</strong> <em class="client">OBA</em> <em class="cmd">cmd</em></a>
 
                     <img src="https://user-images.githubusercontent.com/16196640/169023877-22d6ee0a-4d9e-4bce-abcc-bccd8ef6f506.png" alt="">
                     
@@ -303,7 +613,7 @@
                 </li>
 
                 <li>
-                    <a href=""><strong>Ilojo Bar</strong> <em class="client">Femke van Zeijl</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
+                    <a href=""><strong>Ilojo Bar</strong> <em class="client">The Historical Group of Nigeria</em> <em class="cmd">cmd</em></a>
 
                     <img src="https://github.com/cmda-minor-web-cases/ilojo-bar/raw/main/assets/ilojo-bar.jpg?raw=true" alt="">
                     
@@ -352,7 +662,7 @@
                 </li>
 
                 <li>
-                    <a href=""><strong>Laadpaal CO<sub>2</sub> Footprint</strong> <em class="client">Green Caravan</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
+                    <a href=""><strong>Laadpaal CO<sub>2</sub> Footprint</strong> <em class="client">Green Caravan</em> <em class="cmd">cmd</em></a>
                     
                     <img src="https://github.com/cmda-minor-web-cases/hoe-fossielvrij-is-deze-laadpaal/raw/main/assets/green-caravan-logo.png?raw=true" alt="">
 
@@ -390,7 +700,7 @@
                 </li>
 
                 <li>
-                    <a href=""><strong>Mid Term Website</strong> <em class="client">CMD</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
+                    <a href=""><strong>Mid Term Website</strong> <em class="client">CMD</em> <em class="cmd">cmd</em></a>
                     
                     <img src="https://github.com/cmda-minor-web-cases/cmda-mid-term/raw/main/assets/cmda-mid-term.png?raw=true" alt="">
 
@@ -488,7 +798,7 @@
                 </li>
 
                 <li>
-                    <a href=""><strong>So Nuts</strong> <em class="client">Chippr</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
+                    <a href=""><strong>So Nuts</strong> <em class="client">Chippr</em> <em class="cmd">cmd</em></a>
 
                     <img src="https://camo.githubusercontent.com/4b7d44f56d9a8cdd8684fa1475841ff6c486730f5f597e589f9069153ef8b669/68747470733a2f2f7777772e6876612e6e6c2f62696e61726965732f7468726565636f6c756d6e6c616e6473636170652f636f6e74656e742f67616c6c6572792f73756273697465732f757262616e2d766974616c6974792f6e69657577732f676f2d6e7574732f676570656e73696f6e65657264652d6d616e2d6574656e642d6f702d62616e6b2e6a706567" alt="">
                     
@@ -512,7 +822,105 @@
                 </li>
 
                 <li>
-                    <a href=""><strong>Smoelenboek</strong> <em class="client">CMD</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
+                    <a href=""><strong>Smart Zones</strong> <em class="client">Fronteer</em> <em class="fdnd">fdnd</em> <em class="cmd">cmd</em></a>
+
+                    <img src="https://github.com/cmda-minor-web-cases/coding-the-curbs/raw/main/assets/coding-the-curbs.jpeg?raw=true" alt="">
+                    
+                    <p>
+                        Ontwerp en ontwikkel het interactieve reserveringsysteem voor Smart Zones in de stad.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/file-code</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                                <path d="M10 13l-1 2l1 2"></path>
+                                <path d="M14 13l1 2l-1 2"></path>
+                            </svg>
+                            FED
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>Leef en leer</strong> <em class="client">OBA</em> <em class="cmd">cmd</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.png" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/file-code</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                                <path d="M10 13l-1 2l1 2"></path>
+                                <path d="M14 13l1 2l-1 2"></path>
+                            </svg>
+                            FED
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>Smoelenboek</strong> <em class="client">CMD</em> <em class="cmd">cmd</em></a>
 
                     <img src="https://www.cmd-amsterdam.nl/wp-content/uploads/2020/07/Alumni-e1595850160391.png" alt="">
                     
@@ -560,101 +968,448 @@
                     </ul>
                 </li>
             </ul>
+
+            
         </section>
 
-        <form action="#">
-            <fieldset>
-                <legend>Filter projecten</legend>
+        <section id="mdd-projecten">
+            <header>
+                <h3>MDD</h3>
+            </header>        
 
-                <p>
-                    <label for="programme">Opleiding</label>
+            <ul>               
+                <li>
+                    <a href=""><strong>SuperPaw</strong> <em class="client">Dogs to Go</em> <em class="mdd">mdd</em></a>
 
-                    <select name="programme" id="programme">
-                        <option value="" disabled selected>kies opleiding</option>
-                        <option value="fdnd">FDND</option>
-                        <option value="cmd">CMD</option>
-                        <option value="mdd">MDD</option>
-                    </select>
-                </p>
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
 
-                <p>
-                    <label for="year">Studiejaar</label>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
 
-                    <select name="year" id="year">
-                        <option value="" disabled selected>kies studiejaar</option>
-                        <option value="year1">Propedeuse</option>
-                        <option value="year2">Jaar 2</option>
-                        <option value="year3">Jaar 3</option>
-                        <option value="year4">Jaar 4</option>
-                    </select>
-                </p>
+                <li>
+                    <a href=""><strong>Leef en leer</strong> <em class="client">OBA</em> <em class="cmd">cmd</em> <em class="mdd">mdd</em></a>
 
-                <p>
-                    <label for="term">Periode</label>
+                    <img src="placeholder.png" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
 
-                    <select name="term" id="term">
-                        <option value="" disabled selected>Kies een periode</option>
-                        <option value="block1">Blok 1</option>
-                        <option value="block2">Blok 2</option>
-                        <option value="block3">Blok 3</option>
-                        <option value="block4">Blok 4</option>
-                        <option value="block4">Semester 1</option>
-                        <option value="block4">Semester 2</option>
-                        
-                    </select>
-                </p>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/file-code</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                                <path d="M10 13l-1 2l1 2"></path>
+                                <path d="M14 13l1 2l-1 2"></path>
+                            </svg>
+                            FED
+                        </li>
+                    </ul>
+                </li>
 
-                <p>
-                    <label for="topics">Onderwerpen</label>
+                <li>
+                    <a href=""><strong>Wasty</strong> <em class="client">Critical Media Lab</em> <em class="mdd">mdd</em></a>
 
-                    <select name="topics" id="topics">
-                        <option value="" disabled selected>kies onderwerp</option>
-                        <option value="concept">Concept</option>
-                        <option value="content">Content</option>
-                        <option value="vid">VID</option>
-                        <option value="ui-ux">UI/UX</option>
-                        <option value="fed">Frontend</option>
-                    </select>
-                </p>
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
 
-                <p>
-                    <label for="themes">Thema's</label>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
 
-                    <select name="thems" id="themes">
-                        <option value="" disabled selected>kies thema</option>
-                        <option value="">Jeugdzorg</option>
-                        <option value="">Duurzaamheid</option>
-                        <option value="">Mediawijsheid</option>
-                        <option value="">Voeding</option>
-                        <option value="">Beweging</option>
-                    </select>
-                </p>
+                <li>
+                    <a href=""><strong>Sonarski</strong> <em class="client">KapiteinLabs</em> <em class="mdd">mdd</em></a>
 
-                <p>
-                    <label for="themes">Sustainable Development Goals</label>
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
 
-                    <select name="sdg" id="sdg">
-                        <option value="" disabled selected>kies SDG</option>
-                        <option value="">Armoede</option>
-                        <option value="">Honger</option>
-                        <option value="">Gezondheidszorg</option>
-                        <option value="">Gendergelijkheid</option>
-                        <option value="">Schoon water</option>
-                        <option value="">Duurzame energie</option>
-                        <option value="">Economische groei</option>
-                        <option value="">Infrastructuur</option>
-                        <option value="">Gelijkheid</option>
-                        <option value="">Veiligheid</option>
-                        <option value="">Duurzame consumptie</option>
-                        <option value="">Klimaat</option>
-                        <option value="">Oceanen & Zeeën</option>
-                        <option value="">Biodiversiteit</option>
-                        <option value="">Publieke diensten</option>
-                        <option value="">Mondiaal partnerschap</option>
-                    </select>
-                </p>
-            </fieldset>
-        </form>
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>The Empathy Lab</strong> <em class="client">Creative Media For Social Change</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>ScanMyTest</strong> <em class="client">StreekLab Haarlem </em> <em class="fdnd">fdnd</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>Digital Skate experience</strong> <em class="client">Floda31</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>Samen Sterker</strong> <em class="client">Innovation Catalyzer</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>Feelee</strong> <em class="client">Greenberry</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>The Time Machine</strong> <em class="client">ARCAM</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href=""><strong>Dutch Immigration Service</strong> <em class="client">OBA</em> <em class="mdd">mdd</em></a>
+
+                    <img src="placeholder.jpeg" alt="">
+                    
+                    <p>
+                        ...
+                    </p>
+
+                    <ul>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-color-swatch" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <desc>Download more icon variants from https://tabler-icons.io/i/color-swatch</desc>
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M19 3h-4a2 2 0 0 0 -2 2v12a4 4 0 0 0 8 0v-12a2 2 0 0 0 -2 -2"></path>
+                                <path d="M13 7.35l-2 -2a2 2 0 0 0 -2.828 0l-2.828 2.828a2 2 0 0 0 0 2.828l9 9"></path>
+                                <path d="M7.3 13h-2.3a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h12"></path>
+                                <line x1="17" y1="17" x2="17" y2="17.01"></line>
+                                </svg>
+                                VID
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hand-click" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M8 13v-8.5a1.5 1.5 0 0 1 3 0v7.5" />
+                                <path d="M11 11.5v-2a1.5 1.5 0 0 1 3 0v2.5" />
+                                <path d="M14 10.5a1.5 1.5 0 0 1 3 0v1.5" />
+                                <path d="M17 11.5a1.5 1.5 0 0 1 3 0v4.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7l-.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+                                <path d="M5 3l-1 -1" />
+                                <path d="M4 7h-1" />
+                                <path d="M14 3l1 -1" />
+                                <path d="M15 6h1" />
+                            </svg>
+                            UX/UI
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        
     </main>
     
 </body>
