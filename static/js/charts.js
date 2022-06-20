@@ -4,7 +4,7 @@ const projectsCTX = document.querySelector("#projectsChart");
 const projectsChart = new Chart(projectsCTX, {
     type: 'pie',
     data: {
-        labels: ["FDND (21)", "CMD (39)", "MDD (10)"],
+        labels: ["FDND (9)", "CMD (39)", "MDD (10)"],
         datasets: [
         {
             data: [21,39, 10],
